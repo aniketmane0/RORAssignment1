@@ -1,0 +1,9 @@
+<h1>List of people</h1>
+
+<ul>
+  <% @names.each do |firstname| %>
+    <li>
+      <a href = "/employees/<%=firstname[:id]%>"><%= firstname[:name] %> </a>
+    </li>
+    <%end%>
+</ul>
